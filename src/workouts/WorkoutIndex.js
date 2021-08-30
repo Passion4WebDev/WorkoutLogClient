@@ -38,8 +38,9 @@ const WorkoutIndex = (props) => {
     }
     return (
     
-            <Row>                
+                         
             <Container>
+            <Row> 
            
                 <Col md="3">
                     <WorkoutCreate fetchWorkouts={fetchWorkouts} token={props.token}/>
@@ -50,8 +51,8 @@ const WorkoutIndex = (props) => {
                 </Col>
                 {UpdateActive ? <WorkoutEdit workoutToUpdate={workoutToUpdate} 
                 updateOff={updateOff} token={props.token} fetchWorkouts={fetchWorkouts}/> : <></>}
-                </Container>
                </Row>
+               </Container>
     )
     }
 export default WorkoutIndex;
